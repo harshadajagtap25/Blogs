@@ -17,7 +17,7 @@ const Create = () => {
     };
     
     axios
-      .post(`http://localhost:8080/blogs/create`, payload, {
+      .post(`https://blogappnem111.herokuapp.com/blogs/create`, payload, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

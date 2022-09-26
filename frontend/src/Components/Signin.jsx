@@ -1,5 +1,5 @@
-import axios from 'axios';
-import React, { useState } from 'react'
+import axios from "axios";
+import React, { useState } from "react";
 
 const Signin = () => {
   const [email, setEmail] = useState("");
@@ -13,7 +13,7 @@ const Signin = () => {
       age,
     };
     axios
-      .post(`http://localhost:8080/user/signup`, payload)
+      .post(`https://blogappnem111.herokuapp.com/user/signup`, payload)
       .then((r) => {
         console.log(r);
       })
@@ -50,6 +50,6 @@ const Signin = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Signin
+export default Signin;

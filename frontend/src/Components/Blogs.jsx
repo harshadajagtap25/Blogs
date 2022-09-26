@@ -8,7 +8,7 @@ const Blogs = () => {
 
   const handleGetBlogs = () => {
     axios
-      .get(`http://localhost:8080/blogs`, {
+      .get(`https://blogappnem111.herokuapp.com/blogs`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -22,7 +22,7 @@ const Blogs = () => {
   };
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:8080/blogs/delete/${id}`, {
+      .delete(`https://blogappnem111.herokuapp.com/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
